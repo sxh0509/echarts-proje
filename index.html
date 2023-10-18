@@ -4,43 +4,269 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>拍立得大屏可视化</title>
-    <script src="js/echarts.min.js"></script>
-    <script src="js/flexible.js"></script>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/index.js"></script>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="font/iconfont.css">
+    <script src="js/echarts.min.js"></script>
+    <script src="js/flexible.js"></script>
+    <script src="js/jquery.min.js"></script>
 </head>
 <body>
     <div class="viewport">
         <div class="column">
-            <!-- 概要 -->
-            <div></div>
+            <!-- 概要 --> 
+            <div class="overview panel">
+                <div class="inner">
+                    <ul>
+                        <li>
+                            <h4>2,190</h4>
+                            <span>
+                                <i class="iconfont icon-dot" style="color:#006cff;"></i>设备总数
+                            </span>
+                        </li>
+                        <li>
+                            <h4>190</h4>
+                            <span>
+                                <i class="iconfont icon-dot" style="color:#6acca3;"></i>设备总数
+                            </span>
+                        </li>
+                        <li>
+                            <h4>3,001</h4>
+                            <span>
+                                <i class="iconfont icon-dot" style="color:#6acca3;"></i>设备总数
+                            </span>
+                        </li>
+                        <li>
+                            <h4>108</h4>
+                            <span>
+                                <i class="iconfont icon-dot" style="color:#ff5660;"></i>设备总数
+                            </span>
+                        </li>
+                    </ul>   
+                </div>
+            </div>
             <!-- 故障设备监控 -->
-            <div></div>
+            <div class="monitor panel">
+                <div class="inner">
+                    <div class="tabs">
+                        <span class="active">故障设备监控</span>
+                        <span>实时注册详情</span>
+                    </div>
+                    <div class="content">
+                        <div class="head">
+                            <span class="col">故障时间</span>
+                            <span class="col">设备地址</span>
+                            <span class="col">性别</span>
+                        </div>
+                        <div class="marquee-view">
+                            <div class="marquee">
+                                <div class="row">
+                                    <span class="col">10:00:09</span>
+                                    <span class="col">湖北省武汉市江岸区</span>
+                                    <span class="col">男</span>
+                                    <span class="iconfont icon-dot"></span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">10:00:09</span>
+                                    <span class="col">湖北省武汉市江岸区</span>
+                                    <span class="col">男</span>
+                                    <span class="iconfont icon-dot"></span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">10:00:09</span>
+                                    <span class="col">湖北省武汉市江岸区</span>
+                                    <span class="col">男</span>
+                                    <span class="iconfont icon-dot"></span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">10:00:09</span>
+                                    <span class="col">湖北省武汉市江岸区</span>
+                                    <span class="col">男</span>
+                                    <span class="iconfont icon-dot"></span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">10:00:09</span>
+                                    <span class="col">湖北省武汉市江岸区</span>
+                                    <span class="col">男</span>
+                                    <span class="iconfont icon-dot"></span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">10:00:09</span>
+                                    <span class="col">湖北省武汉市江岸区</span>
+                                    <span class="col">男</span>
+                                    <span class="iconfont icon-dot"></span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">10:00:09</span>
+                                    <span class="col">湖北省武汉市江岸区</span>
+                                    <span class="col">男</span>
+                                    <span class="iconfont icon-dot"></span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">10:00:09</span>
+                                    <span class="col">湖北省武汉市江岸区</span>
+                                    <span class="col">男</span>
+                                    <span class="iconfont icon-dot"></span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">10:00:09</span>
+                                    <span class="col">湖北省武汉市江岸区</span>
+                                    <span class="col">男</span>
+                                    <span class="iconfont icon-dot"></span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">10:00:09</span>
+                                    <span class="col">湖北省武汉市江岸区</span>
+                                    <span class="col">男</span>
+                                    <span class="iconfont icon-dot"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="head">
+                            <span class="col">注册时间</span>
+                            <span class="col">注册地址</span>
+                            <span class="col">性别</span>
+                        </div>
+                        <div class="marquee-view">
+                            <div class="marquee">
+                                <div class="row">
+                                    <span class="col">10:00:09</span>
+                                    <span class="col">湖北省武汉市江岸区</span>
+                                    <span class="col">男</span>
+                                    <span class="iconfont icon-dot"></span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">10:00:09</span>
+                                    <span class="col">湖北省武汉市江岸区</span>
+                                    <span class="col">男</span>
+                                    <span class="iconfont icon-dot"></span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">10:00:09</span>
+                                    <span class="col">湖北省武汉市江岸区</span>
+                                    <span class="col">男</span>
+                                    <span class="iconfont icon-dot"></span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">10:00:09</span>
+                                    <span class="col">湖北省武汉市江岸区</span>
+                                    <span class="col">男</span>
+                                    <span class="iconfont icon-dot"></span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">10:00:09</span>
+                                    <span class="col">湖北省武汉市江岸区</span>
+                                    <span class="col">男</span>
+                                    <span class="iconfont icon-dot"></span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">10:00:09</span>
+                                    <span class="col">湖北省武汉市江岸区</span>
+                                    <span class="col">男</span>
+                                    <span class="iconfont icon-dot"></span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">10:00:09</span>
+                                    <span class="col">湖北省武汉市江岸区</span>
+                                    <span class="col">男</span>
+                                    <span class="iconfont icon-dot"></span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">10:00:09</span>
+                                    <span class="col">湖北省武汉市江岸区</span>
+                                    <span class="col">男</span>
+                                    <span class="iconfont icon-dot"></span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">10:00:09</span>
+                                    <span class="col">湖北省武汉市江岸区</span>
+                                    <span class="col">男</span>
+                                    <span class="iconfont icon-dot"></span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">10:00:09</span>
+                                    <span class="col">湖北省武汉市江岸区</span>
+                                    <span class="col">男</span>
+                                    <span class="iconfont icon-dot"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <!-- 点位分布统计 -->
-            <div></div>
+            <div class="point panel">
+                <div class="inner">
+                    <h3>销售地分布统计</h3>
+                    <div class="chart">
+                        <div class="pie">1</div>
+                        <div class="data">
+                            <div class="item">
+                                <h4>320,11</h4>
+                                <span>
+                                    <span class="iconfont icon-dot" style="color: #ff5660;"></span>
+                                    销售总数
+                                </span>
+                            </div>
+                            <div class="item">
+                                <h4>418</h4>
+                                <span>
+                                    <span class="iconfont icon-dot" style="color: yellowgreen;"></span>
+                                    同时增长
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="column">
             <!-- 地图 -->
-            <div></div>
+            <div class="map">
+                <h3>设备数据统计</h3>
+            </div>
             <!-- 用户 -->
-            <div></div>
+            <div class="users panel">
+                <div class="inner">
+                    <h3>全国用户量统计</h3>
+                </div>
+            </div>
         </div>
         <div class="column">
             <!-- 订单 -->
-            <div></div>
+            <div class="order panel">
+                <div class="inner">
+                    right.1
+                </div>
+            </div>
             <!-- 销售额统计 -->
-            <div></div>
-            <div>
+            <div class="sales panel">
+                <div class="inner">
+                    <h3>销售额统计</h3>
+                </div>
+            </div>
+            <div class="wrap">3
                 <!-- 渠道分布 -->
-                <div></div>
+                <div class="channel panel">
+                    <div class="inner">
+                        <h3>渠道分布</h3>
+                    </div>
+                </div>
                 <!-- 一季度销售进度 -->
-                <div></div>
+                <div class="quarter panel">
+                    <div class="inner">
+                        <h3>一季度销售进度</h3>
+                    </div>
+                </div>
             </div>
             <!-- 热榜排行 -->
-            <div></div>
+            <div class="top panel">
+                <div class="inner">
+                    bottom.4
+                </div>
+            </div>
         </div>
     </div>
 </body>
@@ -48,3 +274,4 @@
    
 </style>
 </html>
+<script src="js/index.js"></script>

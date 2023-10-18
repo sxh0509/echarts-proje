@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(../image/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0 ;
+}
+.viewport{
+    max-width: 1920px;
+    min-width: 1024px;
+    margin: 0 auto;
+    min-height: 780px;
+    color: #fff;
+    background: url(../image/logo.png);
+    background-repeat: no-repeat;
+    background-position: 0 0 ;
+    background-size: contain;
+    display: flex;
+    padding: 1.1875rem 0.25rem 0;
+}
+@media screen and (max-width:1024px) {
+    html{
+      font-size: 42.66px !important;
+    }
+  }
+  @media screen and (min-width:1920px) {
+    html{
+      font-size: 80px !important;
+    }
+  }
+em,
+i {
+  font-style: normal;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #666;
+}
+img{
+    border: 0;
+    vertical-align: middle;
+}
+button{
+    cursor: pointer;
+}
+a:hover{
+    color: #e33333;
+}
+h4{
+    font-weight: 400;
+}
+h3{
+    font-weight: 400;
+    font-size: 0.25rem;
+    color: #fff;
+}
+/* 布局 */
+.viewport .column{
+    flex: 3;
+}
+.viewport .column:nth-child(2){
+    flex: 4;
+    margin: .4rem .25rem;
+}
+/* 公共边框图片 */
+.panel{
+    position: relative;
+    border: .1875rem solid transparent;
+    border-image-source: url(../image/border.png);
+    border-image-slice: 51 38 20 132;
+    border-image-repeat: stretch;
+    margin-bottom: .25rem;
+    border-width: .6375rem .475rem .25rem 1.65rem;
+}
+/* 公共 */
+.inner{
+    position: absolute;
+    left: -1.65rem;
+    top: -0.6375rem;
+    right: -0.475rem;
+    bottom: -0.25rem;
+    padding: .3rem .45rem;
+}
